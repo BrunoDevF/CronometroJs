@@ -2,6 +2,8 @@
 <h1 align="center">
     <img src="cron.jpg" width="312" >
 </h1>
+
+
 # Como usar o cronometro?
  Utilize a tag script para chamar nosso script JS para incorporar ao site HTML
 ```html
