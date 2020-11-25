@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro JS</title>
+</head>
+<body>
+    <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        body{
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;  
+        }
+        .cronometro{
+            border-radius: 100px;
+            text-align: center;
+            background-color: #64e3c7;
+            width: 500px;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .visor{
+            width: 300px;
+            color: white;
+        }
+        .buttons{
+            padding: 30px 0 0 0;
+            height: 80px;
+            width: 100% ;
+        }
+        button{
+            cursor: pointer;
+            outline: 0;
+            color: black;
+            width: 80px;
+            height: 40px;
+            border-radius: 30px;
+            border: 0;
+        }
+        
+        .green{
+            background-color: #c3ffa3;
+        }
+        .yellow{
+            background-color: #fff48f;
+        }
+        .red{
+            background-color: #ff7373;
+        }
+    </style>
+    <div class="cronometro">
+        <div class="visor">
+            <h1 id="counter">00:00:00</h1>
+        </div>
+
+        <div class="buttons">
+            <button onclick="start();" class="green">Start</button>
+            <button onclick="pause();" class="yellow">Pause</button>
+            <button onclick="stop();" class="red">Stop</button>
+        </div>
+    </div>
+    <script src="cronometro.js">
+        
+    </script>
+</body>
+</html>
